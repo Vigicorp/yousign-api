@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ProcedureRemindConfig Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ProcedureRemindConfig implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'email' => '\Swagger\Client\Model\ProcedureRemindConfigEmail'
+        'email' => '\YouSign\Client\Model\ProcedureRemindConfigEmail'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ProcedureRemindConfig implements ModelInterface, ArrayAccess
     /**
      * Gets email
      *
-     * @return \Swagger\Client\Model\ProcedureRemindConfigEmail
+     * @return \YouSign\Client\Model\ProcedureRemindConfigEmail
      */
     public function getEmail()
     {
@@ -218,7 +218,7 @@ class ProcedureRemindConfig implements ModelInterface, ArrayAccess
     /**
      * Sets email
      *
-     * @param \Swagger\Client\Model\ProcedureRemindConfigEmail $email email
+     * @param \YouSign\Client\Model\ProcedureRemindConfigEmail $email email
      *
      * @return $this
      */

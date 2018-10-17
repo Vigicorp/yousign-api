@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ServerStampInput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class ServerStampInput implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'file' => 'string',
         'certificate' => 'string',
-        'config' => '\Swagger\Client\Model\ServerStampConfig[]',
-        'file_objects' => '\Swagger\Client\Model\FileObjectInputWithoutFileReference[]',
+        'config' => '\YouSign\Client\Model\ServerStampConfig[]',
+        'file_objects' => '\YouSign\Client\Model\FileObjectInputWithoutFileReference[]',
         'sign_image' => 'string'
     ];
 
@@ -298,7 +298,7 @@ class ServerStampInput implements ModelInterface, ArrayAccess
     /**
      * Gets config
      *
-     * @return \Swagger\Client\Model\ServerStampConfig[]
+     * @return \YouSign\Client\Model\ServerStampConfig[]
      */
     public function getConfig()
     {
@@ -308,7 +308,7 @@ class ServerStampInput implements ModelInterface, ArrayAccess
     /**
      * Sets config
      *
-     * @param \Swagger\Client\Model\ServerStampConfig[] $config config
+     * @param \YouSign\Client\Model\ServerStampConfig[] $config config
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class ServerStampInput implements ModelInterface, ArrayAccess
     /**
      * Gets file_objects
      *
-     * @return \Swagger\Client\Model\FileObjectInputWithoutFileReference[]
+     * @return \YouSign\Client\Model\FileObjectInputWithoutFileReference[]
      */
     public function getFileObjects()
     {
@@ -332,7 +332,7 @@ class ServerStampInput implements ModelInterface, ArrayAccess
     /**
      * Sets file_objects
      *
-     * @param \Swagger\Client\Model\FileObjectInputWithoutFileReference[] $file_objects file_objects
+     * @param \YouSign\Client\Model\FileObjectInputWithoutFileReference[] $file_objects file_objects
      *
      * @return $this
      */

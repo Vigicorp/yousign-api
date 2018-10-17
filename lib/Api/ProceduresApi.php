@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSign\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSign\Client\ApiException;
+use YouSign\Client\Configuration;
+use YouSign\Client\HeaderSelector;
+use YouSign\Client\ObjectSerializer;
 
 /**
  * ProceduresApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -101,7 +101,7 @@ class ProceduresApi
      * @param  \DateTime[] $deleted_at Filter by delete date  deletedAt[after]&#x3D;2017-09-18 deletedAt[before]&#x3D;2017-09-18 deletedAt[strictly_after]&#x3D;2017-09-18 deletedAt[strictly_before]&#x3D;2017-09-18 (optional)
      * @param  string[] $order Order by attribut (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -130,7 +130,7 @@ class ProceduresApi
      * @param  \DateTime[] $deleted_at Filter by delete date  deletedAt[after]&#x3D;2017-09-18 deletedAt[before]&#x3D;2017-09-18 deletedAt[strictly_after]&#x3D;2017-09-18 deletedAt[strictly_before]&#x3D;2017-09-18 (optional)
      * @param  string[] $order Order by attribut (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -487,9 +487,9 @@ class ProceduresApi
      * @param  \DateTime[] $deleted_at Filter by delete date  deletedAt[after]&#x3D;2017-09-18 deletedAt[before]&#x3D;2017-09-18 deletedAt[strictly_after]&#x3D;2017-09-18 deletedAt[strictly_before]&#x3D;2017-09-18 (optional)
      * @param  string[] $order Order by attribut (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProcedureOutput[]
+     * @return \YouSign\Client\Model\ProcedureOutput[]
      */
     public function proceduresGet($authorization, $status = null, $template = 'false', $members = null, $items_per_page = null, $pagination = null, $page = null, $name = null, $members_firstname = null, $members_lastname = null, $members_phone = null, $members_email = null, $files_name = null, $created_at = null, $updated_at = null, $expires_at = null, $deleted_at = null, $order = null)
     {
@@ -521,13 +521,13 @@ class ProceduresApi
      * @param  \DateTime[] $deleted_at Filter by delete date  deletedAt[after]&#x3D;2017-09-18 deletedAt[before]&#x3D;2017-09-18 deletedAt[strictly_after]&#x3D;2017-09-18 deletedAt[strictly_before]&#x3D;2017-09-18 (optional)
      * @param  string[] $order Order by attribut (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProcedureOutput[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ProcedureOutput[], HTTP status code, HTTP response headers (array of strings)
      */
     public function proceduresGetWithHttpInfo($authorization, $status = null, $template = 'false', $members = null, $items_per_page = null, $pagination = null, $page = null, $name = null, $members_firstname = null, $members_lastname = null, $members_phone = null, $members_email = null, $files_name = null, $created_at = null, $updated_at = null, $expires_at = null, $deleted_at = null, $order = null)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput[]';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput[]';
         $request = $this->proceduresGetRequest($authorization, $status, $template, $members, $items_per_page, $pagination, $page, $name, $members_firstname, $members_lastname, $members_phone, $members_email, $files_name, $created_at, $updated_at, $expires_at, $deleted_at, $order);
 
         try {
@@ -579,7 +579,7 @@ class ProceduresApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProcedureOutput[]',
+                        '\YouSign\Client\Model\ProcedureOutput[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -655,7 +655,7 @@ class ProceduresApi
      */
     public function proceduresGetAsyncWithHttpInfo($authorization, $status = null, $template = 'false', $members = null, $items_per_page = null, $pagination = null, $page = null, $name = null, $members_firstname = null, $members_lastname = null, $members_phone = null, $members_email = null, $files_name = null, $created_at = null, $updated_at = null, $expires_at = null, $deleted_at = null, $order = null)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput[]';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput[]';
         $request = $this->proceduresGetRequest($authorization, $status, $template, $members, $items_per_page, $pagination, $page, $name, $members_firstname, $members_lastname, $members_phone, $members_email, $files_name, $created_at, $updated_at, $expires_at, $deleted_at, $order);
 
         return $this->client
@@ -900,7 +900,7 @@ class ProceduresApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -917,7 +917,7 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1139,11 +1139,11 @@ class ProceduresApi
      *
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureDuplicateInput $body body (required)
+     * @param  \YouSign\Client\Model\ProcedureDuplicateInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProcedureOutput
+     * @return \YouSign\Client\Model\ProcedureOutput
      */
     public function proceduresIdDuplicatePost($id, $authorization, $body)
     {
@@ -1158,15 +1158,15 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureDuplicateInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureDuplicateInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function proceduresIdDuplicatePostWithHttpInfo($id, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdDuplicatePostRequest($id, $authorization, $body);
 
         try {
@@ -1218,7 +1218,7 @@ class ProceduresApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProcedureOutput',
+                        '\YouSign\Client\Model\ProcedureOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1235,7 +1235,7 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureDuplicateInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureDuplicateInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1257,14 +1257,14 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureDuplicateInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureDuplicateInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function proceduresIdDuplicatePostAsyncWithHttpInfo($id, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdDuplicatePostRequest($id, $authorization, $body);
 
         return $this->client
@@ -1309,7 +1309,7 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureDuplicateInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureDuplicateInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1431,9 +1431,9 @@ class ProceduresApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProcedureOutput
+     * @return \YouSign\Client\Model\ProcedureOutput
      */
     public function proceduresIdGet($id, $authorization)
     {
@@ -1449,13 +1449,13 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function proceduresIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdGetRequest($id, $authorization);
 
         try {
@@ -1507,7 +1507,7 @@ class ProceduresApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProcedureOutput',
+                        '\YouSign\Client\Model\ProcedureOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1551,7 +1551,7 @@ class ProceduresApi
      */
     public function proceduresIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdGetRequest($id, $authorization);
 
         return $this->client
@@ -1708,7 +1708,7 @@ class ProceduresApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1726,7 +1726,7 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1985,11 +1985,11 @@ class ProceduresApi
      * @param  string $id id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProcedureOutput
+     * @return \YouSign\Client\Model\ProcedureOutput
      */
     public function proceduresIdPut($id, $content_type, $authorization, $body)
     {
@@ -2005,15 +2005,15 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function proceduresIdPutWithHttpInfo($id, $content_type, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdPutRequest($id, $content_type, $authorization, $body);
 
         try {
@@ -2065,7 +2065,7 @@ class ProceduresApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProcedureOutput',
+                        '\YouSign\Client\Model\ProcedureOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2083,7 +2083,7 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2106,14 +2106,14 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function proceduresIdPutAsyncWithHttpInfo($id, $content_type, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdPutRequest($id, $content_type, $authorization, $body);
 
         return $this->client
@@ -2159,7 +2159,7 @@ class ProceduresApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2290,11 +2290,11 @@ class ProceduresApi
      *
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureRemindInput $body body (required)
+     * @param  \YouSign\Client\Model\ProcedureRemindInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProcedureOutput
+     * @return \YouSign\Client\Model\ProcedureOutput
      */
     public function proceduresIdRemindPost($id, $authorization, $body)
     {
@@ -2309,15 +2309,15 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureRemindInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureRemindInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function proceduresIdRemindPostWithHttpInfo($id, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdRemindPostRequest($id, $authorization, $body);
 
         try {
@@ -2369,7 +2369,7 @@ class ProceduresApi
                 case 204:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProcedureOutput',
+                        '\YouSign\Client\Model\ProcedureOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2386,7 +2386,7 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureRemindInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureRemindInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2408,14 +2408,14 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureRemindInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureRemindInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function proceduresIdRemindPostAsyncWithHttpInfo($id, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresIdRemindPostRequest($id, $authorization, $body);
 
         return $this->client
@@ -2460,7 +2460,7 @@ class ProceduresApi
      *
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureRemindInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureRemindInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2581,11 +2581,11 @@ class ProceduresApi
      *
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProcedureOutput
+     * @return \YouSign\Client\Model\ProcedureOutput
      */
     public function proceduresPost($content_type, $authorization, $body)
     {
@@ -2600,15 +2600,15 @@ class ProceduresApi
      *
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ProcedureOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function proceduresPostWithHttpInfo($content_type, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresPostRequest($content_type, $authorization, $body);
 
         try {
@@ -2660,7 +2660,7 @@ class ProceduresApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProcedureOutput',
+                        '\YouSign\Client\Model\ProcedureOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2677,7 +2677,7 @@ class ProceduresApi
      *
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2699,14 +2699,14 @@ class ProceduresApi
      *
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function proceduresPostAsyncWithHttpInfo($content_type, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProcedureOutput';
+        $returnType = '\YouSign\Client\Model\ProcedureOutput';
         $request = $this->proceduresPostRequest($content_type, $authorization, $body);
 
         return $this->client
@@ -2751,7 +2751,7 @@ class ProceduresApi
      *
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\ProcedureInput $body (required)
+     * @param  \YouSign\Client\Model\ProcedureInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

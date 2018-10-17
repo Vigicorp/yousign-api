@@ -20,9 +20,9 @@ Name | Type | Description | Notes
 **languages** | **string[]** | Array of allowed languages, use country code | [optional] 
 **fonts** | **string[]** | List of fonts to load on the view. (Loaded via google fonts) | [optional] 
 **style** | **string** | CSS for customize the view | [optional] 
-**redirect_cancel** | [**\Swagger\Client\Model\SignatureUiOutputRedirectCancel**](SignatureUiOutputRedirectCancel.md) |  | [optional] 
-**redirect_error** | [**\Swagger\Client\Model\SignatureUiOutputRedirectError**](SignatureUiOutputRedirectError.md) |  | [optional] 
-**redirect_success** | [**\Swagger\Client\Model\SignatureUiOutputRedirectSuccess**](SignatureUiOutputRedirectSuccess.md) |  | [optional] 
+**redirect_cancel** | [**\YouSign\Client\Model\SignatureUiOutputRedirectCancel**](SignatureUiOutputRedirectCancel.md) |  | [optional] 
+**redirect_error** | [**\YouSign\Client\Model\SignatureUiOutputRedirectError**](SignatureUiOutputRedirectError.md) |  | [optional] 
+**redirect_success** | [**\YouSign\Client\Model\SignatureUiOutputRedirectSuccess**](SignatureUiOutputRedirectSuccess.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

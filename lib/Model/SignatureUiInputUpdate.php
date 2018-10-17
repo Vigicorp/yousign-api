@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * SignatureUiInputUpdate Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -74,9 +74,9 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
         'languages' => 'string[]',
         'fonts' => 'string[]',
         'style' => 'string',
-        'redirect_cancel' => '\Swagger\Client\Model\SignatureUiOutputRedirectCancel',
-        'redirect_error' => '\Swagger\Client\Model\SignatureUiOutputRedirectError',
-        'redirect_success' => '\Swagger\Client\Model\SignatureUiOutputRedirectSuccess'
+        'redirect_cancel' => '\YouSign\Client\Model\SignatureUiOutputRedirectCancel',
+        'redirect_error' => '\YouSign\Client\Model\SignatureUiOutputRedirectError',
+        'redirect_success' => '\YouSign\Client\Model\SignatureUiOutputRedirectSuccess'
     ];
 
     /**
@@ -762,7 +762,7 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets redirect_cancel
      *
-     * @return \Swagger\Client\Model\SignatureUiOutputRedirectCancel
+     * @return \YouSign\Client\Model\SignatureUiOutputRedirectCancel
      */
     public function getRedirectCancel()
     {
@@ -772,7 +772,7 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets redirect_cancel
      *
-     * @param \Swagger\Client\Model\SignatureUiOutputRedirectCancel $redirect_cancel redirect_cancel
+     * @param \YouSign\Client\Model\SignatureUiOutputRedirectCancel $redirect_cancel redirect_cancel
      *
      * @return $this
      */
@@ -786,7 +786,7 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets redirect_error
      *
-     * @return \Swagger\Client\Model\SignatureUiOutputRedirectError
+     * @return \YouSign\Client\Model\SignatureUiOutputRedirectError
      */
     public function getRedirectError()
     {
@@ -796,7 +796,7 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets redirect_error
      *
-     * @param \Swagger\Client\Model\SignatureUiOutputRedirectError $redirect_error redirect_error
+     * @param \YouSign\Client\Model\SignatureUiOutputRedirectError $redirect_error redirect_error
      *
      * @return $this
      */
@@ -810,7 +810,7 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets redirect_success
      *
-     * @return \Swagger\Client\Model\SignatureUiOutputRedirectSuccess
+     * @return \YouSign\Client\Model\SignatureUiOutputRedirectSuccess
      */
     public function getRedirectSuccess()
     {
@@ -820,7 +820,7 @@ class SignatureUiInputUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets redirect_success
      *
-     * @param \Swagger\Client\Model\SignatureUiOutputRedirectSuccess $redirect_success redirect_success
+     * @param \YouSign\Client\Model\SignatureUiOutputRedirectSuccess $redirect_success redirect_success
      *
      * @return $this
      */

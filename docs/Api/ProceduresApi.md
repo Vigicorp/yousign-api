@@ -1,4 +1,4 @@
-# Swagger\Client\ProceduresApi
+# YouSign\Client\ProceduresApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -25,7 +25,7 @@ Export Procedure list
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -87,7 +87,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **proceduresGet**
-> \Swagger\Client\Model\ProcedureOutput[] proceduresGet($authorization, $status, $template, $members, $items_per_page, $pagination, $page, $name, $members_firstname, $members_lastname, $members_phone, $members_email, $files_name, $created_at, $updated_at, $expires_at, $deleted_at, $order)
+> \YouSign\Client\Model\ProcedureOutput[] proceduresGet($authorization, $status, $template, $members, $items_per_page, $pagination, $page, $name, $members_firstname, $members_lastname, $members_phone, $members_email, $files_name, $created_at, $updated_at, $expires_at, $deleted_at, $order)
 
 Get Procedure list
 
@@ -96,7 +96,7 @@ Get Procedure list
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcedureOutput[]**](../Model/ProcedureOutput.md)
+[**\YouSign\Client\Model\ProcedureOutput[]**](../Model/ProcedureOutput.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Delete a Procedure
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **proceduresIdDuplicatePost**
-> \Swagger\Client\Model\ProcedureOutput proceduresIdDuplicatePost($id, $authorization, $body)
+> \YouSign\Client\Model\ProcedureOutput proceduresIdDuplicatePost($id, $authorization, $body)
 
 Duplicate a Procedure
 
@@ -225,14 +225,14 @@ Duplicate a Procedure
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id = "id_example"; // string | 
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\ProcedureDuplicateInput(); // \Swagger\Client\Model\ProcedureDuplicateInput | 
+$body = new \YouSign\Client\Model\ProcedureDuplicateInput(); // \YouSign\Client\Model\ProcedureDuplicateInput | 
 
 try {
     $result = $apiInstance->proceduresIdDuplicatePost($id, $authorization, $body);
@@ -249,11 +249,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\ProcedureDuplicateInput**](../Model/ProcedureDuplicateInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ProcedureDuplicateInput**](../Model/ProcedureDuplicateInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
+[**\YouSign\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **proceduresIdGet**
-> \Swagger\Client\Model\ProcedureOutput proceduresIdGet($id, $authorization)
+> \YouSign\Client\Model\ProcedureOutput proceduresIdGet($id, $authorization)
 
 Find a Procedure by ID
 
@@ -276,7 +276,7 @@ Find a Procedure by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
+[**\YouSign\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
 
 ### Authorization
 
@@ -327,7 +327,7 @@ Get a Procedure proof file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -367,7 +367,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **proceduresIdPut**
-> \Swagger\Client\Model\ProcedureOutput proceduresIdPut($id, $content_type, $authorization, $body)
+> \YouSign\Client\Model\ProcedureOutput proceduresIdPut($id, $content_type, $authorization, $body)
 
 Update a Procedure
 
@@ -376,7 +376,7 @@ Update a Procedure
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -384,7 +384,7 @@ $apiInstance = new Swagger\Client\Api\ProceduresApi(
 $id = "id_example"; // string | 
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\ProcedureInput(); // \Swagger\Client\Model\ProcedureInput | 
+$body = new \YouSign\Client\Model\ProcedureInput(); // \YouSign\Client\Model\ProcedureInput | 
 
 try {
     $result = $apiInstance->proceduresIdPut($id, $content_type, $authorization, $body);
@@ -402,11 +402,11 @@ Name | Type | Description  | Notes
  **id** | **string**|  |
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\ProcedureInput**](../Model/ProcedureInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ProcedureInput**](../Model/ProcedureInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
+[**\YouSign\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
 
 ### Authorization
 
@@ -420,7 +420,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **proceduresIdRemindPost**
-> \Swagger\Client\Model\ProcedureOutput proceduresIdRemindPost($id, $authorization, $body)
+> \YouSign\Client\Model\ProcedureOutput proceduresIdRemindPost($id, $authorization, $body)
 
 Remind a Procedure
 
@@ -429,14 +429,14 @@ Remind a Procedure
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id = "id_example"; // string | 
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\ProcedureRemindInput(); // \Swagger\Client\Model\ProcedureRemindInput | 
+$body = new \YouSign\Client\Model\ProcedureRemindInput(); // \YouSign\Client\Model\ProcedureRemindInput | 
 
 try {
     $result = $apiInstance->proceduresIdRemindPost($id, $authorization, $body);
@@ -453,11 +453,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\ProcedureRemindInput**](../Model/ProcedureRemindInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ProcedureRemindInput**](../Model/ProcedureRemindInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
+[**\YouSign\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
 
 ### Authorization
 
@@ -471,7 +471,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **proceduresPost**
-> \Swagger\Client\Model\ProcedureOutput proceduresPost($content_type, $authorization, $body)
+> \YouSign\Client\Model\ProcedureOutput proceduresPost($content_type, $authorization, $body)
 
 Create a new Procedure
 
@@ -480,14 +480,14 @@ Create a new Procedure
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProceduresApi(
+$apiInstance = new YouSign\Client\Api\ProceduresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\ProcedureInput(); // \Swagger\Client\Model\ProcedureInput | 
+$body = new \YouSign\Client\Model\ProcedureInput(); // \YouSign\Client\Model\ProcedureInput | 
 
 try {
     $result = $apiInstance->proceduresPost($content_type, $authorization, $body);
@@ -504,11 +504,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\ProcedureInput**](../Model/ProcedureInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ProcedureInput**](../Model/ProcedureInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
+[**\YouSign\Client\Model\ProcedureOutput**](../Model/ProcedureOutput.md)
 
 ### Authorization
 

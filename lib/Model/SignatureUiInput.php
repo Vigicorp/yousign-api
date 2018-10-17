@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * SignatureUiInput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,12 +72,12 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
         'sign_image_types_available' => 'string[]',
         'default_language' => 'string',
         'languages' => 'string[]',
-        'labels' => '\Swagger\Client\Model\SignatureUiLabelInputIncluded[]',
+        'labels' => '\YouSign\Client\Model\SignatureUiLabelInputIncluded[]',
         'fonts' => 'string[]',
         'style' => 'string',
-        'redirect_cancel' => '\Swagger\Client\Model\SignatureUiInputRedirectCancel',
-        'redirect_error' => '\Swagger\Client\Model\SignatureUiInputRedirectError',
-        'redirect_success' => '\Swagger\Client\Model\SignatureUiInputRedirectSuccess'
+        'redirect_cancel' => '\YouSign\Client\Model\SignatureUiInputRedirectCancel',
+        'redirect_error' => '\YouSign\Client\Model\SignatureUiInputRedirectError',
+        'redirect_success' => '\YouSign\Client\Model\SignatureUiInputRedirectSuccess'
     ];
 
     /**
@@ -742,7 +742,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Gets labels
      *
-     * @return \Swagger\Client\Model\SignatureUiLabelInputIncluded[]
+     * @return \YouSign\Client\Model\SignatureUiLabelInputIncluded[]
      */
     public function getLabels()
     {
@@ -752,7 +752,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Sets labels
      *
-     * @param \Swagger\Client\Model\SignatureUiLabelInputIncluded[] $labels labels
+     * @param \YouSign\Client\Model\SignatureUiLabelInputIncluded[] $labels labels
      *
      * @return $this
      */
@@ -814,7 +814,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Gets redirect_cancel
      *
-     * @return \Swagger\Client\Model\SignatureUiInputRedirectCancel
+     * @return \YouSign\Client\Model\SignatureUiInputRedirectCancel
      */
     public function getRedirectCancel()
     {
@@ -824,7 +824,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Sets redirect_cancel
      *
-     * @param \Swagger\Client\Model\SignatureUiInputRedirectCancel $redirect_cancel redirect_cancel
+     * @param \YouSign\Client\Model\SignatureUiInputRedirectCancel $redirect_cancel redirect_cancel
      *
      * @return $this
      */
@@ -838,7 +838,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Gets redirect_error
      *
-     * @return \Swagger\Client\Model\SignatureUiInputRedirectError
+     * @return \YouSign\Client\Model\SignatureUiInputRedirectError
      */
     public function getRedirectError()
     {
@@ -848,7 +848,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Sets redirect_error
      *
-     * @param \Swagger\Client\Model\SignatureUiInputRedirectError $redirect_error redirect_error
+     * @param \YouSign\Client\Model\SignatureUiInputRedirectError $redirect_error redirect_error
      *
      * @return $this
      */
@@ -862,7 +862,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Gets redirect_success
      *
-     * @return \Swagger\Client\Model\SignatureUiInputRedirectSuccess
+     * @return \YouSign\Client\Model\SignatureUiInputRedirectSuccess
      */
     public function getRedirectSuccess()
     {
@@ -872,7 +872,7 @@ class SignatureUiInput implements ModelInterface, ArrayAccess
     /**
      * Sets redirect_success
      *
-     * @param \Swagger\Client\Model\SignatureUiInputRedirectSuccess $redirect_success redirect_success
+     * @param \YouSign\Client\Model\SignatureUiInputRedirectSuccess $redirect_success redirect_success
      *
      * @return $this
      */

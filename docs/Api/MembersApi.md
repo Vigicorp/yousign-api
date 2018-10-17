@@ -1,4 +1,4 @@
-# Swagger\Client\MembersApi
+# YouSign\Client\MembersApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **membersGet**
-> \Swagger\Client\Model\MemberOutput[] membersGet($procedure)
+> \YouSign\Client\Model\MemberOutput[] membersGet($procedure)
 
 Get all Members
 
@@ -23,7 +23,7 @@ Returns the list of Members of a Company. It only usefull if you use the query p
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\MembersApi(
+$apiInstance = new YouSign\Client\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MemberOutput[]**](../Model/MemberOutput.md)
+[**\YouSign\Client\Model\MemberOutput[]**](../Model/MemberOutput.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Delete a member
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\MembersApi(
+$apiInstance = new YouSign\Client\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -120,7 +120,7 @@ Get a proof file of a member
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\MembersApi(
+$apiInstance = new YouSign\Client\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **membersIdPut**
-> \Swagger\Client\Model\MemberOutput membersIdPut($id, $body)
+> \YouSign\Client\Model\MemberOutput membersIdPut($id, $body)
 
 Edit a Member
 
@@ -171,13 +171,13 @@ Edit a member
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\MembersApi(
+$apiInstance = new YouSign\Client\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id = "id_example"; // string | 
-$body = new \Swagger\Client\Model\MemberInput(); // \Swagger\Client\Model\MemberInput | 
+$body = new \YouSign\Client\Model\MemberInput(); // \YouSign\Client\Model\MemberInput | 
 
 try {
     $result = $apiInstance->membersIdPut($id, $body);
@@ -193,11 +193,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Swagger\Client\Model\MemberInput**](../Model/MemberInput.md)|  |
+ **body** | [**\YouSign\Client\Model\MemberInput**](../Model/MemberInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\MemberOutput**](../Model/MemberOutput.md)
+[**\YouSign\Client\Model\MemberOutput**](../Model/MemberOutput.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **membersPost**
-> \Swagger\Client\Model\MemberOutput membersPost($body)
+> \YouSign\Client\Model\MemberOutput membersPost($body)
 
 Create a new Member
 
@@ -222,12 +222,12 @@ Create a new member
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\MembersApi(
+$apiInstance = new YouSign\Client\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\MemberInput(); // \Swagger\Client\Model\MemberInput | 
+$body = new \YouSign\Client\Model\MemberInput(); // \YouSign\Client\Model\MemberInput | 
 
 try {
     $result = $apiInstance->membersPost($body);
@@ -242,11 +242,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MemberInput**](../Model/MemberInput.md)|  |
+ **body** | [**\YouSign\Client\Model\MemberInput**](../Model/MemberInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\MemberOutput**](../Model/MemberOutput.md)
+[**\YouSign\Client\Model\MemberOutput**](../Model/MemberOutput.md)
 
 ### Authorization
 

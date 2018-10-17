@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSign\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSign\Client\ApiException;
+use YouSign\Client\Configuration;
+use YouSign\Client\HeaderSelector;
+use YouSign\Client\ObjectSerializer;
 
 /**
  * AuthenticationsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,9 +90,9 @@ class AuthenticationsApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AuthenticationEmailOutput
+     * @return \YouSign\Client\Model\AuthenticationEmailOutput
      */
     public function authenticationsEmailIdGet($id, $authorization)
     {
@@ -108,13 +108,13 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AuthenticationEmailOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\AuthenticationEmailOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationsEmailIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationEmailOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationEmailOutput';
         $request = $this->authenticationsEmailIdGetRequest($id, $authorization);
 
         try {
@@ -166,7 +166,7 @@ class AuthenticationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AuthenticationEmailOutput',
+                        '\YouSign\Client\Model\AuthenticationEmailOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class AuthenticationsApi
      */
     public function authenticationsEmailIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationEmailOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationEmailOutput';
         $request = $this->authenticationsEmailIdGetRequest($id, $authorization);
 
         return $this->client
@@ -367,11 +367,11 @@ class AuthenticationsApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body3 $body body (required)
+     * @param  \YouSign\Client\Model\Body3 $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AuthenticationEmailOutput
+     * @return \YouSign\Client\Model\AuthenticationEmailOutput
      */
     public function authenticationsEmailIdPut($id, $authorization, $content_type, $body)
     {
@@ -387,15 +387,15 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body3 $body (required)
+     * @param  \YouSign\Client\Model\Body3 $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AuthenticationEmailOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\AuthenticationEmailOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationsEmailIdPutWithHttpInfo($id, $authorization, $content_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationEmailOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationEmailOutput';
         $request = $this->authenticationsEmailIdPutRequest($id, $authorization, $content_type, $body);
 
         try {
@@ -447,7 +447,7 @@ class AuthenticationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AuthenticationEmailOutput',
+                        '\YouSign\Client\Model\AuthenticationEmailOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -455,7 +455,7 @@ class AuthenticationsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse400',
+                        '\YouSign\Client\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -473,7 +473,7 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body3 $body (required)
+     * @param  \YouSign\Client\Model\Body3 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -496,14 +496,14 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body3 $body (required)
+     * @param  \YouSign\Client\Model\Body3 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function authenticationsEmailIdPutAsyncWithHttpInfo($id, $authorization, $content_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationEmailOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationEmailOutput';
         $request = $this->authenticationsEmailIdPutRequest($id, $authorization, $content_type, $body);
 
         return $this->client
@@ -549,7 +549,7 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body3 $body (required)
+     * @param  \YouSign\Client\Model\Body3 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -681,9 +681,9 @@ class AuthenticationsApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AuthenticationInweboOutput
+     * @return \YouSign\Client\Model\AuthenticationInweboOutput
      */
     public function authenticationsInweboIdGet($id, $authorization)
     {
@@ -699,13 +699,13 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AuthenticationInweboOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\AuthenticationInweboOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationsInweboIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationInweboOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationInweboOutput';
         $request = $this->authenticationsInweboIdGetRequest($id, $authorization);
 
         try {
@@ -757,7 +757,7 @@ class AuthenticationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AuthenticationInweboOutput',
+                        '\YouSign\Client\Model\AuthenticationInweboOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -801,7 +801,7 @@ class AuthenticationsApi
      */
     public function authenticationsInweboIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationInweboOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationInweboOutput';
         $request = $this->authenticationsInweboIdGetRequest($id, $authorization);
 
         return $this->client
@@ -958,11 +958,11 @@ class AuthenticationsApi
      * @param  string $id id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\Body1 $body body (required)
+     * @param  \YouSign\Client\Model\Body1 $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AuthenticationInweboOutput
+     * @return \YouSign\Client\Model\AuthenticationInweboOutput
      */
     public function authenticationsInweboIdPut($id, $content_type, $authorization, $body)
     {
@@ -978,15 +978,15 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\Body1 $body (required)
+     * @param  \YouSign\Client\Model\Body1 $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AuthenticationInweboOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\AuthenticationInweboOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationsInweboIdPutWithHttpInfo($id, $content_type, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationInweboOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationInweboOutput';
         $request = $this->authenticationsInweboIdPutRequest($id, $content_type, $authorization, $body);
 
         try {
@@ -1038,7 +1038,7 @@ class AuthenticationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AuthenticationInweboOutput',
+                        '\YouSign\Client\Model\AuthenticationInweboOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1056,7 +1056,7 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\Body1 $body (required)
+     * @param  \YouSign\Client\Model\Body1 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1079,14 +1079,14 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\Body1 $body (required)
+     * @param  \YouSign\Client\Model\Body1 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function authenticationsInweboIdPutAsyncWithHttpInfo($id, $content_type, $authorization, $body)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationInweboOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationInweboOutput';
         $request = $this->authenticationsInweboIdPutRequest($id, $content_type, $authorization, $body);
 
         return $this->client
@@ -1132,7 +1132,7 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
-     * @param  \Swagger\Client\Model\Body1 $body (required)
+     * @param  \YouSign\Client\Model\Body1 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1264,9 +1264,9 @@ class AuthenticationsApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AuthenticationSmsOutput
+     * @return \YouSign\Client\Model\AuthenticationSmsOutput
      */
     public function authenticationsSmsIdGet($id, $authorization)
     {
@@ -1282,13 +1282,13 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AuthenticationSmsOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\AuthenticationSmsOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationsSmsIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationSmsOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationSmsOutput';
         $request = $this->authenticationsSmsIdGetRequest($id, $authorization);
 
         try {
@@ -1340,7 +1340,7 @@ class AuthenticationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AuthenticationSmsOutput',
+                        '\YouSign\Client\Model\AuthenticationSmsOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1384,7 +1384,7 @@ class AuthenticationsApi
      */
     public function authenticationsSmsIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationSmsOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationSmsOutput';
         $request = $this->authenticationsSmsIdGetRequest($id, $authorization);
 
         return $this->client
@@ -1541,11 +1541,11 @@ class AuthenticationsApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body2 $body body (required)
+     * @param  \YouSign\Client\Model\Body2 $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AuthenticationSmsOutput
+     * @return \YouSign\Client\Model\AuthenticationSmsOutput
      */
     public function authenticationsSmsIdPut($id, $authorization, $content_type, $body)
     {
@@ -1561,15 +1561,15 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body2 $body (required)
+     * @param  \YouSign\Client\Model\Body2 $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AuthenticationSmsOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\AuthenticationSmsOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationsSmsIdPutWithHttpInfo($id, $authorization, $content_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationSmsOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationSmsOutput';
         $request = $this->authenticationsSmsIdPutRequest($id, $authorization, $content_type, $body);
 
         try {
@@ -1621,7 +1621,7 @@ class AuthenticationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AuthenticationSmsOutput',
+                        '\YouSign\Client\Model\AuthenticationSmsOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1629,7 +1629,7 @@ class AuthenticationsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse400',
+                        '\YouSign\Client\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1647,7 +1647,7 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body2 $body (required)
+     * @param  \YouSign\Client\Model\Body2 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1670,14 +1670,14 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body2 $body (required)
+     * @param  \YouSign\Client\Model\Body2 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function authenticationsSmsIdPutAsyncWithHttpInfo($id, $authorization, $content_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\AuthenticationSmsOutput';
+        $returnType = '\YouSign\Client\Model\AuthenticationSmsOutput';
         $request = $this->authenticationsSmsIdPutRequest($id, $authorization, $content_type, $body);
 
         return $this->client
@@ -1723,7 +1723,7 @@ class AuthenticationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $content_type The MIME type of the body of the request (required)
-     * @param  \Swagger\Client\Model\Body2 $body (required)
+     * @param  \YouSign\Client\Model\Body2 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

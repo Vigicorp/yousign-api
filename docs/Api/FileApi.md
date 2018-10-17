@@ -1,4 +1,4 @@
-# Swagger\Client\FileApi
+# YouSign\Client\FileApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -22,7 +22,7 @@ Used to get the base64 content of a file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filesIdDuplicatePost**
-> \Swagger\Client\Model\FileOutput filesIdDuplicatePost($id, $authorization)
+> \YouSign\Client\Model\FileOutput filesIdDuplicatePost($id, $authorization)
 
 Duplicate a File
 
@@ -73,7 +73,7 @@ Duplicate a file. It will be create a clone of this file, with a new ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FileOutput**](../Model/FileOutput.md)
+[**\YouSign\Client\Model\FileOutput**](../Model/FileOutput.md)
 
 ### Authorization
 
@@ -113,7 +113,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filesIdGet**
-> \Swagger\Client\Model\FileOutput filesIdGet($id, $authorization)
+> \YouSign\Client\Model\FileOutput filesIdGet($id, $authorization)
 
 Find a File by ID
 
@@ -124,7 +124,7 @@ Returns all the information regarding the File but without its content (for perf
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FileOutput**](../Model/FileOutput.md)
+[**\YouSign\Client\Model\FileOutput**](../Model/FileOutput.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filesPost**
-> \Swagger\Client\Model\FileOutput filesPost($content_type, $authorization, $body)
+> \YouSign\Client\Model\FileOutput filesPost($content_type, $authorization, $body)
 
 Create a new File
 
@@ -175,14 +175,14 @@ Used to upload a file in base64 on our platform
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\FileInput(); // \Swagger\Client\Model\FileInput | 
+$body = new \YouSign\Client\Model\FileInput(); // \YouSign\Client\Model\FileInput | 
 
 try {
     $result = $apiInstance->filesPost($content_type, $authorization, $body);
@@ -199,11 +199,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\FileInput**](../Model/FileInput.md)|  |
+ **body** | [**\YouSign\Client\Model\FileInput**](../Model/FileInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\FileOutput**](../Model/FileOutput.md)
+[**\YouSign\Client\Model\FileOutput**](../Model/FileOutput.md)
 
 ### Authorization
 

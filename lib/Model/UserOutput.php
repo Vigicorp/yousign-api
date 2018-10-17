@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * UserOutput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,11 +72,11 @@ class UserOutput implements ModelInterface, ArrayAccess
         'saml_name_id' => 'string',
         'default_sign_image' => 'string',
         'fast_sign' => 'bool',
-        'group' => '\Swagger\Client\Model\UserGroup',
+        'group' => '\YouSign\Client\Model\UserGroup',
         'notifications' => 'object',
         'deleted' => 'bool',
         'deleted_at' => '\DateTime',
-        'inwebo_user_request__internal' => '\Swagger\Client\Model\InweboUserRequest'
+        'inwebo_user_request__internal' => '\YouSign\Client\Model\InweboUserRequest'
     ];
 
     /**
@@ -748,7 +748,7 @@ class UserOutput implements ModelInterface, ArrayAccess
     /**
      * Gets group
      *
-     * @return \Swagger\Client\Model\UserGroup
+     * @return \YouSign\Client\Model\UserGroup
      */
     public function getGroup()
     {
@@ -758,7 +758,7 @@ class UserOutput implements ModelInterface, ArrayAccess
     /**
      * Sets group
      *
-     * @param \Swagger\Client\Model\UserGroup $group group
+     * @param \YouSign\Client\Model\UserGroup $group group
      *
      * @return $this
      */
@@ -844,7 +844,7 @@ class UserOutput implements ModelInterface, ArrayAccess
     /**
      * Gets inwebo_user_request__internal
      *
-     * @return \Swagger\Client\Model\InweboUserRequest
+     * @return \YouSign\Client\Model\InweboUserRequest
      */
     public function getInweboUserRequestInternal()
     {
@@ -854,7 +854,7 @@ class UserOutput implements ModelInterface, ArrayAccess
     /**
      * Sets inwebo_user_request__internal
      *
-     * @param \Swagger\Client\Model\InweboUserRequest $inwebo_user_request__internal inwebo_user_request__internal
+     * @param \YouSign\Client\Model\InweboUserRequest $inwebo_user_request__internal inwebo_user_request__internal
      *
      * @return $this
      */

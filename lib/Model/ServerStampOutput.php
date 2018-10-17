@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ServerStampOutput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class ServerStampOutput implements ModelInterface, ArrayAccess
         'id' => 'string',
         'file' => 'string',
         'certificate' => 'string',
-        'config' => '\Swagger\Client\Model\ServerStampConfig[]',
-        'file_objects' => '\Swagger\Client\Model\FileObjectOutputWithoutFileReference[]',
+        'config' => '\YouSign\Client\Model\ServerStampConfig[]',
+        'file_objects' => '\YouSign\Client\Model\FileObjectOutputWithoutFileReference[]',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
         'finished_at' => '\DateTime',
@@ -417,7 +417,7 @@ class ServerStampOutput implements ModelInterface, ArrayAccess
     /**
      * Gets config
      *
-     * @return \Swagger\Client\Model\ServerStampConfig[]
+     * @return \YouSign\Client\Model\ServerStampConfig[]
      */
     public function getConfig()
     {
@@ -427,7 +427,7 @@ class ServerStampOutput implements ModelInterface, ArrayAccess
     /**
      * Sets config
      *
-     * @param \Swagger\Client\Model\ServerStampConfig[] $config config
+     * @param \YouSign\Client\Model\ServerStampConfig[] $config config
      *
      * @return $this
      */
@@ -441,7 +441,7 @@ class ServerStampOutput implements ModelInterface, ArrayAccess
     /**
      * Gets file_objects
      *
-     * @return \Swagger\Client\Model\FileObjectOutputWithoutFileReference[]
+     * @return \YouSign\Client\Model\FileObjectOutputWithoutFileReference[]
      */
     public function getFileObjects()
     {
@@ -451,7 +451,7 @@ class ServerStampOutput implements ModelInterface, ArrayAccess
     /**
      * Sets file_objects
      *
-     * @param \Swagger\Client\Model\FileObjectOutputWithoutFileReference[] $file_objects file_objects
+     * @param \YouSign\Client\Model\FileObjectOutputWithoutFileReference[] $file_objects file_objects
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSign\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSign\Client\ApiException;
+use YouSign\Client\Configuration;
+use YouSign\Client\HeaderSelector;
+use YouSign\Client\ObjectSerializer;
 
 /**
  * OperationsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,9 +90,9 @@ class OperationsApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OperationOutput
+     * @return \YouSign\Client\Model\OperationOutput
      */
     public function operationsIdGet($id, $authorization)
     {
@@ -108,13 +108,13 @@ class OperationsApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OperationOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\OperationOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function operationsIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\OperationOutput';
+        $returnType = '\YouSign\Client\Model\OperationOutput';
         $request = $this->operationsIdGetRequest($id, $authorization);
 
         try {
@@ -166,7 +166,7 @@ class OperationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OperationOutput',
+                        '\YouSign\Client\Model\OperationOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class OperationsApi
      */
     public function operationsIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\OperationOutput';
+        $returnType = '\YouSign\Client\Model\OperationOutput';
         $request = $this->operationsIdGetRequest($id, $authorization);
 
         return $this->client
@@ -364,13 +364,13 @@ class OperationsApi
      *
      * Create a new Operation
      *
-     * @param  \Swagger\Client\Model\Body $body body (required)
+     * @param  \YouSign\Client\Model\Body $body body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OperationOutput
+     * @return \YouSign\Client\Model\OperationOutput
      */
     public function operationsPost($body, $content_type = null, $authorization = null)
     {
@@ -383,17 +383,17 @@ class OperationsApi
      *
      * Create a new Operation
      *
-     * @param  \Swagger\Client\Model\Body $body (required)
+     * @param  \YouSign\Client\Model\Body $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OperationOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\OperationOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function operationsPostWithHttpInfo($body, $content_type = null, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\OperationOutput';
+        $returnType = '\YouSign\Client\Model\OperationOutput';
         $request = $this->operationsPostRequest($body, $content_type, $authorization);
 
         try {
@@ -445,7 +445,7 @@ class OperationsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OperationOutput',
+                        '\YouSign\Client\Model\OperationOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -460,7 +460,7 @@ class OperationsApi
      *
      * Create a new Operation
      *
-     * @param  \Swagger\Client\Model\Body $body (required)
+     * @param  \YouSign\Client\Model\Body $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
@@ -482,7 +482,7 @@ class OperationsApi
      *
      * Create a new Operation
      *
-     * @param  \Swagger\Client\Model\Body $body (required)
+     * @param  \YouSign\Client\Model\Body $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
@@ -491,7 +491,7 @@ class OperationsApi
      */
     public function operationsPostAsyncWithHttpInfo($body, $content_type = null, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\OperationOutput';
+        $returnType = '\YouSign\Client\Model\OperationOutput';
         $request = $this->operationsPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -534,7 +534,7 @@ class OperationsApi
     /**
      * Create request for operation 'operationsPost'
      *
-     * @param  \Swagger\Client\Model\Body $body (required)
+     * @param  \YouSign\Client\Model\Body $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *

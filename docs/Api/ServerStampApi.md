@@ -1,4 +1,4 @@
-# Swagger\Client\ServerStampApi
+# YouSign\Client\ServerStampApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **serverStampsIdGet**
-> \Swagger\Client\Model\ServerStampOutput serverStampsIdGet($id, $content_type, $authorization)
+> \YouSign\Client\Model\ServerStampOutput serverStampsIdGet($id, $content_type, $authorization)
 
 
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ServerStampApi(
+$apiInstance = new YouSign\Client\Api\ServerStampApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
+[**\YouSign\Client\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **serverStampsPost**
-> \Swagger\Client\Model\ServerStampOutput serverStampsPost($content_type, $authorization, $body)
+> \YouSign\Client\Model\ServerStampOutput serverStampsPost($content_type, $authorization, $body)
 
 
 
@@ -69,14 +69,14 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ServerStampApi(
+$apiInstance = new YouSign\Client\Api\ServerStampApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\ServerStampInput(); // \Swagger\Client\Model\ServerStampInput | 
+$body = new \YouSign\Client\Model\ServerStampInput(); // \YouSign\Client\Model\ServerStampInput | 
 
 try {
     $result = $apiInstance->serverStampsPost($content_type, $authorization, $body);
@@ -93,11 +93,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\ServerStampInput**](../Model/ServerStampInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ServerStampInput**](../Model/ServerStampInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
+[**\YouSign\Client\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
 
 ### Authorization
 

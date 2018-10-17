@@ -1,4 +1,4 @@
-# Swagger\Client\UserApi
+# YouSign\Client\UserApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **usersGet**
-> \Swagger\Client\Model\UserOutput[] usersGet($authorization)
+> \YouSign\Client\Model\UserOutput[] usersGet($authorization)
 
 List all Users
 
@@ -21,7 +21,7 @@ List all Users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserOutput[]**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput[]**](../Model/UserOutput.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ Delete a User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersIdGet**
-> \Swagger\Client\Model\UserOutput usersIdGet($id, $authorization)
+> \YouSign\Client\Model\UserOutput usersIdGet($id, $authorization)
 
 Find a User by ID
 
@@ -116,7 +116,7 @@ Find a User by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserOutput**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput**](../Model/UserOutput.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersIdPut**
-> \Swagger\Client\Model\UserOutput usersIdPut($id, $content_type, $authorization, $body)
+> \YouSign\Client\Model\UserOutput usersIdPut($id, $content_type, $authorization, $body)
 
 Update a User
 
@@ -165,7 +165,7 @@ Update a User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -173,7 +173,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
 $id = "id_example"; // string | 
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\UserUpdateInput(); // \Swagger\Client\Model\UserUpdateInput | 
+$body = new \YouSign\Client\Model\UserUpdateInput(); // \YouSign\Client\Model\UserUpdateInput | 
 
 try {
     $result = $apiInstance->usersIdPut($id, $content_type, $authorization, $body);
@@ -191,11 +191,11 @@ Name | Type | Description  | Notes
  **id** | **string**|  |
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\UserUpdateInput**](../Model/UserUpdateInput.md)|  |
+ **body** | [**\YouSign\Client\Model\UserUpdateInput**](../Model/UserUpdateInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\UserOutput**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput**](../Model/UserOutput.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersPost**
-> \Swagger\Client\Model\UserOutput usersPost($content_type, $authorization, $body)
+> \YouSign\Client\Model\UserOutput usersPost($content_type, $authorization, $body)
 
 Create a new User on Yousign application
 
@@ -218,14 +218,14 @@ Create a new User on Yousign application
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\UserInput(); // \Swagger\Client\Model\UserInput | 
+$body = new \YouSign\Client\Model\UserInput(); // \YouSign\Client\Model\UserInput | 
 
 try {
     $result = $apiInstance->usersPost($content_type, $authorization, $body);
@@ -242,11 +242,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\UserInput**](../Model/UserInput.md)|  |
+ **body** | [**\YouSign\Client\Model\UserInput**](../Model/UserInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\UserOutput**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput**](../Model/UserOutput.md)
 
 ### Authorization
 

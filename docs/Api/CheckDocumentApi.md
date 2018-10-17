@@ -1,4 +1,4 @@
-# Swagger\Client\CheckDocumentApi
+# YouSign\Client\CheckDocumentApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **checkDocumentBankAccountsIdGet**
-> \Swagger\Client\Model\CheckDocumentBankAccountsOutput checkDocumentBankAccountsIdGet($id, $authorization)
+> \YouSign\Client\Model\CheckDocumentBankAccountsOutput checkDocumentBankAccountsIdGet($id, $authorization)
 
 Get informations about a bank document (RIB)
 
@@ -20,7 +20,7 @@ Get informations about a bank document (RIB)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CheckDocumentApi(
+$apiInstance = new YouSign\Client\Api\CheckDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CheckDocumentBankAccountsOutput**](../Model/CheckDocumentBankAccountsOutput.md)
+[**\YouSign\Client\Model\CheckDocumentBankAccountsOutput**](../Model/CheckDocumentBankAccountsOutput.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkDocumentBankAccountsPost**
-> \Swagger\Client\Model\CheckDocumentBankAccountsOutput checkDocumentBankAccountsPost($content_type, $authorization, $body)
+> \YouSign\Client\Model\CheckDocumentBankAccountsOutput checkDocumentBankAccountsPost($content_type, $authorization, $body)
 
 Verify a bank document (RIB)
 
@@ -69,14 +69,14 @@ Verify a bank document (RIB)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CheckDocumentApi(
+$apiInstance = new YouSign\Client\Api\CheckDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\CheckDocumentBankAccountsInput(); // \Swagger\Client\Model\CheckDocumentBankAccountsInput | 
+$body = new \YouSign\Client\Model\CheckDocumentBankAccountsInput(); // \YouSign\Client\Model\CheckDocumentBankAccountsInput | 
 
 try {
     $result = $apiInstance->checkDocumentBankAccountsPost($content_type, $authorization, $body);
@@ -93,11 +93,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\CheckDocumentBankAccountsInput**](../Model/CheckDocumentBankAccountsInput.md)|  |
+ **body** | [**\YouSign\Client\Model\CheckDocumentBankAccountsInput**](../Model/CheckDocumentBankAccountsInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\CheckDocumentBankAccountsOutput**](../Model/CheckDocumentBankAccountsOutput.md)
+[**\YouSign\Client\Model\CheckDocumentBankAccountsOutput**](../Model/CheckDocumentBankAccountsOutput.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkDocumentIdentitiesIdGet**
-> \Swagger\Client\Model\CheckDocumentIdentitiesOutput checkDocumentIdentitiesIdGet($id, $authorization)
+> \YouSign\Client\Model\CheckDocumentIdentitiesOutput checkDocumentIdentitiesIdGet($id, $authorization)
 
 Get informations about an identity document (passport, id cards)
 
@@ -120,7 +120,7 @@ Get informations about an identity document (passport, id cards)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CheckDocumentApi(
+$apiInstance = new YouSign\Client\Api\CheckDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CheckDocumentIdentitiesOutput**](../Model/CheckDocumentIdentitiesOutput.md)
+[**\YouSign\Client\Model\CheckDocumentIdentitiesOutput**](../Model/CheckDocumentIdentitiesOutput.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkDocumentIdentitiesPost**
-> \Swagger\Client\Model\CheckDocumentIdentitiesOutput checkDocumentIdentitiesPost($content_type, $authorization, $body)
+> \YouSign\Client\Model\CheckDocumentIdentitiesOutput checkDocumentIdentitiesPost($content_type, $authorization, $body)
 
 Verify an identity document (passport, id cards)
 
@@ -169,14 +169,14 @@ Verify an identity document (passport, id cards)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CheckDocumentApi(
+$apiInstance = new YouSign\Client\Api\CheckDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
-$body = new \Swagger\Client\Model\CheckDocumentIdentitiesInput(); // \Swagger\Client\Model\CheckDocumentIdentitiesInput | 
+$body = new \YouSign\Client\Model\CheckDocumentIdentitiesInput(); // \YouSign\Client\Model\CheckDocumentIdentitiesInput | 
 
 try {
     $result = $apiInstance->checkDocumentIdentitiesPost($content_type, $authorization, $body);
@@ -193,11 +193,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**| The MIME type of the body of the request |
  **authorization** | **string**| Authentication credentials for HTTP authentication |
- **body** | [**\Swagger\Client\Model\CheckDocumentIdentitiesInput**](../Model/CheckDocumentIdentitiesInput.md)|  |
+ **body** | [**\YouSign\Client\Model\CheckDocumentIdentitiesInput**](../Model/CheckDocumentIdentitiesInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\CheckDocumentIdentitiesOutput**](../Model/CheckDocumentIdentitiesOutput.md)
+[**\YouSign\Client\Model\CheckDocumentIdentitiesOutput**](../Model/CheckDocumentIdentitiesOutput.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * MemberOutput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,12 +68,12 @@ class MemberOutput implements ModelInterface, ArrayAccess
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
         'status' => 'string',
-        'file_objects' => '\Swagger\Client\Model\FileObjectOutput[]',
+        'file_objects' => '\YouSign\Client\Model\FileObjectOutput[]',
         'comment' => 'string',
         'procedure' => 'string',
         'operation_level' => 'string',
         'operation_custom_modes' => 'string[]',
-        'mode_sms_configuration' => '\Swagger\Client\Model\ModeSmsConfiguration'
+        'mode_sms_configuration' => '\YouSign\Client\Model\ModeSmsConfiguration'
     ];
 
     /**
@@ -712,7 +712,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
     /**
      * Gets file_objects
      *
-     * @return \Swagger\Client\Model\FileObjectOutput[]
+     * @return \YouSign\Client\Model\FileObjectOutput[]
      */
     public function getFileObjects()
     {
@@ -722,7 +722,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
     /**
      * Sets file_objects
      *
-     * @param \Swagger\Client\Model\FileObjectOutput[] $file_objects file_objects
+     * @param \YouSign\Client\Model\FileObjectOutput[] $file_objects file_objects
      *
      * @return $this
      */
@@ -850,7 +850,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
     /**
      * Gets mode_sms_configuration
      *
-     * @return \Swagger\Client\Model\ModeSmsConfiguration
+     * @return \YouSign\Client\Model\ModeSmsConfiguration
      */
     public function getModeSmsConfiguration()
     {
@@ -860,7 +860,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
     /**
      * Sets mode_sms_configuration
      *
-     * @param \Swagger\Client\Model\ModeSmsConfiguration $mode_sms_configuration mode_sms_configuration
+     * @param \YouSign\Client\Model\ModeSmsConfiguration $mode_sms_configuration mode_sms_configuration
      *
      * @return $this
      */

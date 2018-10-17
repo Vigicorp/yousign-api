@@ -1,4 +1,4 @@
-# Swagger\Client\SignatureUIApi
+# YouSign\Client\SignatureUIApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **signatureUiLabelsGet**
-> \Swagger\Client\Model\SignatureUiLabelOutput[] signatureUiLabelsGet($name, $signature_ui)
+> \YouSign\Client\Model\SignatureUiLabelOutput[] signatureUiLabelsGet($name, $signature_ui)
 
 Get Signature UI Labels
 
@@ -28,7 +28,7 @@ Only usefull if you use a filter with name or signatureUI
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiLabelOutput[]**](../Model/SignatureUiLabelOutput.md)
+[**\YouSign\Client\Model\SignatureUiLabelOutput[]**](../Model/SignatureUiLabelOutput.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Delete a Signature UI Label
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUiLabelsIdGet**
-> \Swagger\Client\Model\SignatureUiLabelOutput signatureUiLabelsIdGet($id, $id2)
+> \YouSign\Client\Model\SignatureUiLabelOutput signatureUiLabelsIdGet($id, $id2)
 
 Find a Signature UI Label by ID
 
@@ -125,7 +125,7 @@ Find a Signature UI Label by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiLabelOutput**](../Model/SignatureUiLabelOutput.md)
+[**\YouSign\Client\Model\SignatureUiLabelOutput**](../Model/SignatureUiLabelOutput.md)
 
 ### Authorization
 
@@ -165,7 +165,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUiLabelsIdPut**
-> \Swagger\Client\Model\SignatureUiLabelOutput signatureUiLabelsIdPut($id, $id2)
+> \YouSign\Client\Model\SignatureUiLabelOutput signatureUiLabelsIdPut($id, $id2)
 
 Update a Signature UI Label
 
@@ -174,7 +174,7 @@ Update a Signature UI Label
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiLabelOutput**](../Model/SignatureUiLabelOutput.md)
+[**\YouSign\Client\Model\SignatureUiLabelOutput**](../Model/SignatureUiLabelOutput.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUiLabelsPost**
-> \Swagger\Client\Model\SignatureUiLabelOutput signatureUiLabelsPost($body)
+> \YouSign\Client\Model\SignatureUiLabelOutput signatureUiLabelsPost($body)
 
 Create a new Signature UI Label
 
@@ -223,12 +223,12 @@ Create a new Signature UI Label
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\SignatureUiLabelInput(); // \Swagger\Client\Model\SignatureUiLabelInput | 
+$body = new \YouSign\Client\Model\SignatureUiLabelInput(); // \YouSign\Client\Model\SignatureUiLabelInput | 
 
 try {
     $result = $apiInstance->signatureUiLabelsPost($body);
@@ -243,11 +243,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SignatureUiLabelInput**](../Model/SignatureUiLabelInput.md)|  |
+ **body** | [**\YouSign\Client\Model\SignatureUiLabelInput**](../Model/SignatureUiLabelInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiLabelOutput**](../Model/SignatureUiLabelOutput.md)
+[**\YouSign\Client\Model\SignatureUiLabelOutput**](../Model/SignatureUiLabelOutput.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUisGet**
-> \Swagger\Client\Model\SignatureUiOutput[] signatureUisGet()
+> \YouSign\Client\Model\SignatureUiOutput[] signatureUisGet()
 
 Get Signature UI list
 
@@ -270,7 +270,7 @@ Get Signature UI list
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -290,7 +290,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiOutput[]**](../Model/SignatureUiOutput.md)
+[**\YouSign\Client\Model\SignatureUiOutput[]**](../Model/SignatureUiOutput.md)
 
 ### Authorization
 
@@ -313,7 +313,7 @@ Delete a Signature UI
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -352,7 +352,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUisIdGet**
-> \Swagger\Client\Model\SignatureUiOutput signatureUisIdGet($id, $id2)
+> \YouSign\Client\Model\SignatureUiOutput signatureUisIdGet($id, $id2)
 
 Find a Signature UI by ID
 
@@ -361,7 +361,7 @@ Find a Signature UI by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -387,7 +387,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiOutput**](../Model/SignatureUiOutput.md)
+[**\YouSign\Client\Model\SignatureUiOutput**](../Model/SignatureUiOutput.md)
 
 ### Authorization
 
@@ -401,7 +401,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUisIdPut**
-> \Swagger\Client\Model\SignatureUiInputUpdate signatureUisIdPut($id, $id2)
+> \YouSign\Client\Model\SignatureUiInputUpdate signatureUisIdPut($id, $id2)
 
 Update a Signature UI
 
@@ -410,7 +410,7 @@ Update a Signature UI
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiInputUpdate**](../Model/SignatureUiInputUpdate.md)
+[**\YouSign\Client\Model\SignatureUiInputUpdate**](../Model/SignatureUiInputUpdate.md)
 
 ### Authorization
 
@@ -450,7 +450,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **signatureUisPost**
-> \Swagger\Client\Model\SignatureUiOutput signatureUisPost($body)
+> \YouSign\Client\Model\SignatureUiOutput signatureUisPost($body)
 
 Create a new Signature UI
 
@@ -461,12 +461,12 @@ Here is the url format to build on your side to get a custom signature interface
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SignatureUIApi(
+$apiInstance = new YouSign\Client\Api\SignatureUIApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\SignatureUiInput(); // \Swagger\Client\Model\SignatureUiInput | 
+$body = new \YouSign\Client\Model\SignatureUiInput(); // \YouSign\Client\Model\SignatureUiInput | 
 
 try {
     $result = $apiInstance->signatureUisPost($body);
@@ -481,11 +481,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SignatureUiInput**](../Model/SignatureUiInput.md)|  |
+ **body** | [**\YouSign\Client\Model\SignatureUiInput**](../Model/SignatureUiInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\SignatureUiOutput**](../Model/SignatureUiOutput.md)
+[**\YouSign\Client\Model\SignatureUiOutput**](../Model/SignatureUiOutput.md)
 
 ### Authorization
 

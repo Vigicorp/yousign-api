@@ -1,4 +1,4 @@
-# Swagger\Client\FileObjectApi
+# YouSign\Client\FileObjectApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -22,7 +22,7 @@ Delete a File Object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fileObjectsIdGet**
-> \Swagger\Client\Model\FileObjectOutput fileObjectsIdGet($id)
+> \YouSign\Client\Model\FileObjectOutput fileObjectsIdGet($id)
 
 Find a File Object by ID
 
@@ -70,7 +70,7 @@ Get a File Object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
+[**\YouSign\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fileObjectsIdPut**
-> \Swagger\Client\Model\FileObjectOutput fileObjectsIdPut($id, $body)
+> \YouSign\Client\Model\FileObjectOutput fileObjectsIdPut($id, $body)
 
 Update a File Object
 
@@ -119,13 +119,13 @@ Update a File Object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id = "id_example"; // string | 
-$body = new \Swagger\Client\Model\FileObjectInput(); // \Swagger\Client\Model\FileObjectInput | 
+$body = new \YouSign\Client\Model\FileObjectInput(); // \YouSign\Client\Model\FileObjectInput | 
 
 try {
     $result = $apiInstance->fileObjectsIdPut($id, $body);
@@ -141,11 +141,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Swagger\Client\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
+ **body** | [**\YouSign\Client\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
+[**\YouSign\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fileObjectsPost**
-> \Swagger\Client\Model\FileObjectOutput fileObjectsPost($body)
+> \YouSign\Client\Model\FileObjectOutput fileObjectsPost($body)
 
 Create a new File Object
 
@@ -170,12 +170,12 @@ Create a new fileObject
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\FileObjectInput(); // \Swagger\Client\Model\FileObjectInput | 
+$body = new \YouSign\Client\Model\FileObjectInput(); // \YouSign\Client\Model\FileObjectInput | 
 
 try {
     $result = $apiInstance->fileObjectsPost($body);
@@ -190,11 +190,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
+ **body** | [**\YouSign\Client\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
+[**\YouSign\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
 
 ### Authorization
 

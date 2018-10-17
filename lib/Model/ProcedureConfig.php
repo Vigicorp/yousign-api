@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ProcedureConfig Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +57,9 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'email' => '\Swagger\Client\Model\ProcedureConfigEmail',
-        'reminders' => '\Swagger\Client\Model\ProcedureConfigReminder[]',
-        'webhook' => '\Swagger\Client\Model\ProcedureConfigWebhook'
+        'email' => '\YouSign\Client\Model\ProcedureConfigEmail',
+        'reminders' => '\YouSign\Client\Model\ProcedureConfigReminder[]',
+        'webhook' => '\YouSign\Client\Model\ProcedureConfigWebhook'
     ];
 
     /**
@@ -220,7 +220,7 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
     /**
      * Gets email
      *
-     * @return \Swagger\Client\Model\ProcedureConfigEmail
+     * @return \YouSign\Client\Model\ProcedureConfigEmail
      */
     public function getEmail()
     {
@@ -230,7 +230,7 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
     /**
      * Sets email
      *
-     * @param \Swagger\Client\Model\ProcedureConfigEmail $email email
+     * @param \YouSign\Client\Model\ProcedureConfigEmail $email email
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
     /**
      * Gets reminders
      *
-     * @return \Swagger\Client\Model\ProcedureConfigReminder[]
+     * @return \YouSign\Client\Model\ProcedureConfigReminder[]
      */
     public function getReminders()
     {
@@ -254,7 +254,7 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
     /**
      * Sets reminders
      *
-     * @param \Swagger\Client\Model\ProcedureConfigReminder[] $reminders reminders
+     * @param \YouSign\Client\Model\ProcedureConfigReminder[] $reminders reminders
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
     /**
      * Gets webhook
      *
-     * @return \Swagger\Client\Model\ProcedureConfigWebhook
+     * @return \YouSign\Client\Model\ProcedureConfigWebhook
      */
     public function getWebhook()
     {
@@ -278,7 +278,7 @@ class ProcedureConfig implements ModelInterface, ArrayAccess
     /**
      * Sets webhook
      *
-     * @param \Swagger\Client\Model\ProcedureConfigWebhook $webhook webhook
+     * @param \YouSign\Client\Model\ProcedureConfigWebhook $webhook webhook
      *
      * @return $this
      */

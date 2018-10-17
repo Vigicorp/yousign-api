@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ProcedureOutput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,9 +72,9 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
         'ordered' => 'bool',
         'parent' => 'string',
         'metadata' => 'object',
-        'config' => '\Swagger\Client\Model\ProcedureConfig',
-        'members' => '\Swagger\Client\Model\MemberOutput[]',
-        'files' => '\Swagger\Client\Model\FileOutput[]',
+        'config' => '\YouSign\Client\Model\ProcedureConfig',
+        'members' => '\YouSign\Client\Model\MemberOutput[]',
+        'files' => '\YouSign\Client\Model\FileOutput[]',
         'related_files_enable' => 'bool',
         'archive' => 'bool'
     ];
@@ -758,7 +758,7 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
     /**
      * Gets config
      *
-     * @return \Swagger\Client\Model\ProcedureConfig
+     * @return \YouSign\Client\Model\ProcedureConfig
      */
     public function getConfig()
     {
@@ -768,7 +768,7 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
     /**
      * Sets config
      *
-     * @param \Swagger\Client\Model\ProcedureConfig $config config
+     * @param \YouSign\Client\Model\ProcedureConfig $config config
      *
      * @return $this
      */
@@ -782,7 +782,7 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
     /**
      * Gets members
      *
-     * @return \Swagger\Client\Model\MemberOutput[]
+     * @return \YouSign\Client\Model\MemberOutput[]
      */
     public function getMembers()
     {
@@ -792,7 +792,7 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
     /**
      * Sets members
      *
-     * @param \Swagger\Client\Model\MemberOutput[] $members members
+     * @param \YouSign\Client\Model\MemberOutput[] $members members
      *
      * @return $this
      */
@@ -806,7 +806,7 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
     /**
      * Gets files
      *
-     * @return \Swagger\Client\Model\FileOutput[]
+     * @return \YouSign\Client\Model\FileOutput[]
      */
     public function getFiles()
     {
@@ -816,7 +816,7 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
     /**
      * Sets files
      *
-     * @param \Swagger\Client\Model\FileOutput[] $files List of files used in the procedure.
+     * @param \YouSign\Client\Model\FileOutput[] $files List of files used in the procedure.
      *
      * @return $this
      */

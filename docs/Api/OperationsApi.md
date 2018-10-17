@@ -1,4 +1,4 @@
-# Swagger\Client\OperationsApi
+# YouSign\Client\OperationsApi
 
 All URIs are relative to *https://api.yousign.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **operationsIdGet**
-> \Swagger\Client\Model\OperationOutput operationsIdGet($id, $authorization)
+> \YouSign\Client\Model\OperationOutput operationsIdGet($id, $authorization)
 
 Find an Operation by ID
 
@@ -18,7 +18,7 @@ Find an Operation by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OperationsApi(
+$apiInstance = new YouSign\Client\Api\OperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OperationOutput**](../Model/OperationOutput.md)
+[**\YouSign\Client\Model\OperationOutput**](../Model/OperationOutput.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **operationsPost**
-> \Swagger\Client\Model\OperationOutput operationsPost($body, $content_type, $authorization)
+> \YouSign\Client\Model\OperationOutput operationsPost($body, $content_type, $authorization)
 
 Create a new Operation
 
@@ -67,12 +67,12 @@ Create a new Operation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OperationsApi(
+$apiInstance = new YouSign\Client\Api\OperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Body(); // \Swagger\Client\Model\Body | 
+$body = new \YouSign\Client\Model\Body(); // \YouSign\Client\Model\Body | 
 $content_type = "\"application/json\""; // string | The MIME type of the body of the request
 $authorization = "\"Bearer {{access_token}}\""; // string | Authentication credentials for HTTP authentication
 
@@ -89,13 +89,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Body**](../Model/Body.md)|  |
+ **body** | [**\YouSign\Client\Model\Body**](../Model/Body.md)|  |
  **content_type** | **string**| The MIME type of the body of the request | [optional]
  **authorization** | **string**| Authentication credentials for HTTP authentication | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\OperationOutput**](../Model/OperationOutput.md)
+[**\YouSign\Client\Model\OperationOutput**](../Model/OperationOutput.md)
 
 ### Authorization
 

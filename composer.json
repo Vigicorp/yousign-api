@@ -23,6 +23,6 @@
         "guzzlehttp/guzzle": "^6.2"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "YouSign\\Client\\" : "lib/" }
     }
 }
