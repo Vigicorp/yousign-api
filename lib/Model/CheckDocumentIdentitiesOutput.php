@@ -324,8 +324,8 @@ class CheckDocumentIdentitiesOutput implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if (!is_null($this->container['id']) && !preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
-            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
+        if (!is_null($this->container['id']) && !preg_match("/^\/check-document\/identities\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^\/check-document\/identities\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
         }
 
         $allowedValues = $this->getDocumentTypeAllowableValues();
@@ -348,7 +348,7 @@ class CheckDocumentIdentitiesOutput implements ModelInterface, ArrayAccess
     public function valid()
     {
 
-        if (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+        if (!preg_match("/^\/check-document\/identities\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
             return false;
         }
         $allowedValues = $this->getDocumentTypeAllowableValues();
@@ -379,8 +379,8 @@ class CheckDocumentIdentitiesOutput implements ModelInterface, ArrayAccess
     public function setId($id)
     {
 
-        if (!is_null($id) && (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
-            throw new \InvalidArgumentException("invalid value for $id when calling CheckDocumentIdentitiesOutput., must conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
+        if (!is_null($id) && (!preg_match("/^\/check-document\/identities\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
+            throw new \InvalidArgumentException("invalid value for $id when calling CheckDocumentIdentitiesOutput., must conform to the pattern /^\/check-document\/identities\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
         }
 
         $this->container['id'] = $id;

@@ -174,8 +174,9 @@ class UserGroup implements ModelInterface, ArrayAccess
     const PERMISSIONS_USER = 'user';
     const PERMISSIONS_API_KEY = 'api_key';
     const PERMISSIONS_CONTACT = 'contact';
-    
-
+    const PERMISSIONS_PROCEDURE_CUSTOM_FIELD = 'procedure_custom_field';
+    const PERMISSIONS_SIGNATURE_UI = 'signature_ui';
+    const PERMISSIONS_ARCHIVE = 'archive';
     
     /**
      * Gets allowable values of the enum
@@ -191,6 +192,9 @@ class UserGroup implements ModelInterface, ArrayAccess
             self::PERMISSIONS_USER,
             self::PERMISSIONS_API_KEY,
             self::PERMISSIONS_CONTACT,
+            self::PERMISSIONS_PROCEDURE_CUSTOM_FIELD,
+            self::PERMISSIONS_SIGNATURE_UI,
+            self::PERMISSIONS_ARCHIVE,
         ];
     }
     
@@ -224,8 +228,8 @@ class UserGroup implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if (!is_null($this->container['id']) && !preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
-            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
+        if (!is_null($this->container['id']) && !preg_match("/^\/user_groups\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^\/user_groups\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
         }
 
         if ($this->container['name'] === null) {
@@ -243,7 +247,7 @@ class UserGroup implements ModelInterface, ArrayAccess
     public function valid()
     {
 
-        if (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+        if (!preg_match("/^\/user_groups\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
             return false;
         }
         if ($this->container['name'] === null) {
@@ -273,8 +277,8 @@ class UserGroup implements ModelInterface, ArrayAccess
     public function setId($id)
     {
 
-        if (!is_null($id) && (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
-            throw new \InvalidArgumentException("invalid value for $id when calling UserGroup., must conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
+        if (!is_null($id) && (!preg_match("/^\/user_groups\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
+            throw new \InvalidArgumentException("invalid value for $id when calling UserGroup., must conform to the pattern /^\/user_groups\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
         }
 
         $this->container['id'] = $id;

@@ -287,15 +287,16 @@ class ConfigEmailTemplate implements ModelInterface, ArrayAccess
      */
     public function setTo($to)
     {
-        $allowedValues = $this->getToAllowableValues();
-        if (array_diff($to, $allowedValues)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'to', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+        // @TODO : Check allowed values (api definitions are bad)
+//        $allowedValues = $this->getToAllowableValues();
+//        if (array_diff($to, $allowedValues)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'to', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['to'] = $to;
 
         return $this;

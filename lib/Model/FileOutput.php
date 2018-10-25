@@ -262,8 +262,8 @@ class FileOutput implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if (!is_null($this->container['id']) && !preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
-            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
+        if (!is_null($this->container['id']) && !preg_match("/^\/files\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^\/members\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
         }
 
         $allowedValues = $this->getTypeAllowableValues();
@@ -294,7 +294,7 @@ class FileOutput implements ModelInterface, ArrayAccess
     public function valid()
     {
 
-        if (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+        if (!preg_match("/^\/files\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
             return false;
         }
         $allowedValues = $this->getTypeAllowableValues();
@@ -331,8 +331,8 @@ class FileOutput implements ModelInterface, ArrayAccess
     public function setId($id)
     {
 
-        if (!is_null($id) && (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
-            throw new \InvalidArgumentException("invalid value for $id when calling FileOutput., must conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
+        if (!is_null($id) && (!preg_match("/^\/files\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
+            throw new \InvalidArgumentException("invalid value for $id when calling FileOutput., must conform to the pattern /^\/files\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
         }
 
         $this->container['id'] = $id;

@@ -237,8 +237,8 @@ class FileObjectOutputWithoutFileReference implements ModelInterface, ArrayAcces
     {
         $invalidProperties = [];
 
-        if (!is_null($this->container['id']) && !preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
-            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
+        if (!is_null($this->container['id']) && !preg_match("/^\/file_objects\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+            $invalidProperties[] = "invalid value for 'id', must be conform to the pattern /^\/file_objects\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.";
         }
 
         if (!is_null($this->container['position']) && !preg_match("/^\\d+(,\\d+){3}$/", $this->container['position'])) {
@@ -257,7 +257,7 @@ class FileObjectOutputWithoutFileReference implements ModelInterface, ArrayAcces
     public function valid()
     {
 
-        if (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
+        if (!preg_match("/^\/file_objects\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $this->container['id'])) {
             return false;
         }
         if (!preg_match("/^\\d+(,\\d+){3}$/", $this->container['position'])) {
@@ -287,8 +287,8 @@ class FileObjectOutputWithoutFileReference implements ModelInterface, ArrayAcces
     public function setId($id)
     {
 
-        if (!is_null($id) && (!preg_match("/^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
-            throw new \InvalidArgumentException("invalid value for $id when calling FileObjectOutputWithoutFileReference., must conform to the pattern /^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
+        if (!is_null($id) && (!preg_match("/^\/file_objects\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/", $id))) {
+            throw new \InvalidArgumentException("invalid value for $id when calling FileObjectOutputWithoutFileReference., must conform to the pattern /^\/file_objects\/[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$/.");
         }
 
         $this->container['id'] = $id;
