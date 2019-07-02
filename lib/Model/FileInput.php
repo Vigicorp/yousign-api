@@ -63,7 +63,8 @@ class FileInput implements ModelInterface, ArrayAccess
         'description' => 'string',
         'metadata' => 'object',
         'content' => 'string',
-        'procedure' => 'string'
+        'procedure' => 'string',
+        'position' => 'int'
     ];
 
     /**
@@ -78,7 +79,8 @@ class FileInput implements ModelInterface, ArrayAccess
         'description' => null,
         'metadata' => null,
         'content' => null,
-        'procedure' => null
+        'procedure' => null,
+        'position' => null
     ];
 
     /**
@@ -114,7 +116,8 @@ class FileInput implements ModelInterface, ArrayAccess
         'description' => 'description',
         'metadata' => 'metadata',
         'content' => 'content',
-        'procedure' => 'procedure'
+        'procedure' => 'procedure',
+        'position' => 'position'
     ];
 
     /**
@@ -129,7 +132,8 @@ class FileInput implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'metadata' => 'setMetadata',
         'content' => 'setContent',
-        'procedure' => 'setProcedure'
+        'procedure' => 'setProcedure',
+        'position' => 'setPosition'
     ];
 
     /**
@@ -144,7 +148,8 @@ class FileInput implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'metadata' => 'getMetadata',
         'content' => 'getContent',
-        'procedure' => 'getProcedure'
+        'procedure' => 'getProcedure',
+        'position' => 'getPosition'
     ];
 
     /**
@@ -190,9 +195,9 @@ class FileInput implements ModelInterface, ArrayAccess
 
     const TYPE_SIGNABLE = 'signable';
     const TYPE_ATTACHMENT = 'attachment';
-    
 
-    
+
+
     /**
      * Gets allowable values of the enum
      *
@@ -205,7 +210,7 @@ class FileInput implements ModelInterface, ArrayAccess
             self::TYPE_ATTACHMENT,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -229,6 +234,7 @@ class FileInput implements ModelInterface, ArrayAccess
         $this->container['metadata'] = isset($data['metadata']) ? $data['metadata'] : null;
         $this->container['content'] = isset($data['content']) ? $data['content'] : null;
         $this->container['procedure'] = isset($data['procedure']) ? $data['procedure'] : null;
+        $this->container['position'] = isset($data['position']) ? $data['position'] : null;
     }
 
     /**
@@ -453,6 +459,29 @@ class FileInput implements ModelInterface, ArrayAccess
         }
 
         $this->container['procedure'] = $procedure;
+
+        return $this;
+    }
+    /**
+     * Gets position
+     *
+     * @return int
+     */
+    public function getPosition()
+    {
+        return $this->container['position'];
+    }
+
+    /**
+     * Sets position
+     *
+     * @param int $position position
+     *
+     * @return $this
+     */
+    public function setPosition($position)
+    {
+        $this->container['position'] = $position;
 
         return $this;
     }
