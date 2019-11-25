@@ -2400,15 +2400,17 @@ class SignatureUIApi
      *
      * Create a new Signature UI
      *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  \YouSign\Client\Model\SignatureUiInput $body body (required)
      *
      * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \YouSign\Client\Model\SignatureUiOutput
      */
-    public function signatureUisPost($body)
+    public function signatureUisPost($content_type, $authorization, $body)
     {
-        list($response) = $this->signatureUisPostWithHttpInfo($body);
+        list($response) = $this->signatureUisPostWithHttpInfo($content_type, $authorization, $body);
         return $response;
     }
 
@@ -2417,16 +2419,18 @@ class SignatureUIApi
      *
      * Create a new Signature UI
      *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  \YouSign\Client\Model\SignatureUiInput $body (required)
      *
      * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \YouSign\Client\Model\SignatureUiOutput, HTTP status code, HTTP response headers (array of strings)
      */
-    public function signatureUisPostWithHttpInfo($body)
+    public function signatureUisPostWithHttpInfo($content_type, $authorization, $body)
     {
         $returnType = '\YouSign\Client\Model\SignatureUiOutput';
-        $request = $this->signatureUisPostRequest($body);
+        $request = $this->signatureUisPostRequest($content_type, $authorization, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2562,13 +2566,27 @@ class SignatureUIApi
     /**
      * Create request for operation 'signatureUisPost'
      *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  \YouSign\Client\Model\SignatureUiInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function signatureUisPostRequest($body)
+    protected function signatureUisPostRequest($content_type, $authorization, $body)
     {
+        // verify the required parameter 'content_type' is set
+        if ($content_type === null) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $content_type when calling filesPost'
+            );
+        }
+        // verify the required parameter 'authorization' is set
+        if ($authorization === null) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $authorization when calling filesPost'
+            );
+        }
         // verify the required parameter 'body' is set
         if ($body === null) {
             throw new \InvalidArgumentException(
@@ -2583,6 +2601,14 @@ class SignatureUIApi
         $httpBody = '';
         $multipart = false;
 
+        // header params
+        if ($content_type !== null) {
+            $headerParams['Content-Type'] = ObjectSerializer::toHeaderValue($content_type);
+        }
+        // header params
+        if ($authorization !== null) {
+            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
+        }
 
 
         // body params
