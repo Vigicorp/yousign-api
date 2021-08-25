@@ -68,6 +68,7 @@ class MemberInput implements ModelInterface, ArrayAccess
         'procedure' => 'string',
         'operation_level' => 'string',
         'operation_custom_modes' => 'string[]',
+        'operation_mode_email_config' => 'array',
         'mode_sms_configuration' => '\YouSign\Client\Model\ModeSmsConfiguration'
     ];
 
@@ -88,6 +89,7 @@ class MemberInput implements ModelInterface, ArrayAccess
         'procedure' => null,
         'operation_level' => null,
         'operation_custom_modes' => null,
+        'operation_mode_email_config' => null,
         'mode_sms_configuration' => null
     ];
 
@@ -129,6 +131,7 @@ class MemberInput implements ModelInterface, ArrayAccess
         'procedure' => 'procedure',
         'operation_level' => 'operationLevel',
         'operation_custom_modes' => 'operationCustomModes',
+        'operation_mode_email_config' => 'operationModeEmailConfig',
         'mode_sms_configuration' => 'modeSmsConfiguration'
     ];
 
@@ -149,6 +152,7 @@ class MemberInput implements ModelInterface, ArrayAccess
         'procedure' => 'setProcedure',
         'operation_level' => 'setOperationLevel',
         'operation_custom_modes' => 'setOperationCustomModes',
+        'operation_mode_email_config' => 'setOperationModeEmailConfig',
         'mode_sms_configuration' => 'setModeSmsConfiguration'
     ];
 
@@ -169,6 +173,7 @@ class MemberInput implements ModelInterface, ArrayAccess
         'procedure' => 'getProcedure',
         'operation_level' => 'getOperationLevel',
         'operation_custom_modes' => 'getOperationCustomModes',
+        'operation_mode_email_config' => 'getOperationModeEmailConfig',
         'mode_sms_configuration' => 'getModeSmsConfiguration'
     ];
 
@@ -290,6 +295,7 @@ class MemberInput implements ModelInterface, ArrayAccess
         $this->container['procedure'] = isset($data['procedure']) ? $data['procedure'] : null;
         $this->container['operation_level'] = isset($data['operation_level']) ? $data['operation_level'] : null;
         $this->container['operation_custom_modes'] = isset($data['operation_custom_modes']) ? $data['operation_custom_modes'] : null;
+        $this->container['operation_mode_email_config'] = isset($data['operation_mode_email_config']) ? $data['operation_mode_email_config'] : null;
         $this->container['mode_sms_configuration'] = isset($data['mode_sms_configuration']) ? $data['mode_sms_configuration'] : null;
     }
 
@@ -629,6 +635,33 @@ class MemberInput implements ModelInterface, ArrayAccess
             );
         }
         $this->container['operation_custom_modes'] = $operation_custom_modes;
+
+        return $this;
+    }
+
+    /**
+     * Gets operation_mode_email_config
+     *
+     * @return array
+     */
+    public function getOperationModeEmailConfig()
+    {
+        return $this->container['operation_mode_email_config'];
+    }
+
+    /**
+     * Sets operation_mode_email_config
+     *
+     * @param array $operation_mode_email_config operation_mode_email_config
+     *
+     * @return $this
+     */
+    public function setOperationModeEmailConfig($operation_mode_email_config)
+    {
+        if (empty($operation_mode_email_config)) {
+            throw new \InvalidArgumentException("Invalid value for 'operation_mode_email_config'");
+        }
+        $this->container['operation_mode_email_config'] = $operation_mode_email_config;
 
         return $this;
     }
