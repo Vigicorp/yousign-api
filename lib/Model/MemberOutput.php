@@ -246,12 +246,13 @@ class MemberOutput implements ModelInterface, ArrayAccess
     const STATUS_REFUSED = 'refused';
     const OPERATION_LEVEL_NONE = 'none';
     const OPERATION_LEVEL_CUSTOM = 'custom';
+    const OPERATION_CUSTOM_MODES_NONE = 'none';
     const OPERATION_CUSTOM_MODES_SMS = 'sms';
     const OPERATION_CUSTOM_MODES_INWEBO = 'inwebo';
     const OPERATION_CUSTOM_MODES_EMAIL = 'email';
-    
 
-    
+
+
     /**
      * Gets allowable values of the enum
      *
@@ -264,7 +265,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
             self::TYPE_VALIDATOR,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      *
@@ -279,7 +280,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
             self::STATUS_REFUSED,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      *
@@ -292,7 +293,7 @@ class MemberOutput implements ModelInterface, ArrayAccess
             self::OPERATION_LEVEL_CUSTOM,
         ];
     }
-    
+
     /**
      * Gets allowable values of the enum
      *
@@ -301,12 +302,13 @@ class MemberOutput implements ModelInterface, ArrayAccess
     public function getOperationCustomModesAllowableValues()
     {
         return [
+            self::OPERATION_CUSTOM_MODES_NONE,
             self::OPERATION_CUSTOM_MODES_SMS,
             self::OPERATION_CUSTOM_MODES_INWEBO,
             self::OPERATION_CUSTOM_MODES_EMAIL,
         ];
     }
-    
+
 
     /**
      * Associative array for storing property values
@@ -940,5 +942,3 @@ class MemberOutput implements ModelInterface, ArrayAccess
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-
